@@ -22,10 +22,13 @@ export const theme = {
     m: '16px',
     l: '32px',
     xl: '64px',
+    custom: '26px',
   },
 
   fontWeights: {
     normal: 400,
+    medium: 500,
+    semiBold: 600,
     bold: 700,
   },
 
@@ -37,6 +40,7 @@ export const theme = {
   borders: {
     none: 'none',
     normal: '1px solid',
+    medium: '2px solid',
   },
 
   radii: {
@@ -46,8 +50,11 @@ export const theme = {
   },
 
   sizes: {
+    one: '100px',
+    two: '200px',
     profile: '350px',
     container: '1030px',
+    avatar: '150px',
   },
 
   shadows: {

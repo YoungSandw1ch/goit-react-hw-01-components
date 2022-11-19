@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
 import { Box } from 'components/Box/Box.styled';
 import {
-  DescriptionBox,
   Avatar,
   UserName,
   ProfileTag,
   Location,
-  ProfileStats,
   StatsItem,
   Label,
   Quantity,
@@ -22,14 +20,21 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
       borderRadius="normal"
       boxShadow="greyShadow"
     >
-      <DescriptionBox>
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        px={3}
+        py={5}
+      >
         <Avatar src={avatar} alt="User avatar" />
         <UserName>{userName}</UserName>
         <ProfileTag>@{tag}</ProfileTag>
         <Location>{location}</Location>
-      </DescriptionBox>
+      </Box>
 
-      <ProfileStats>
+      <Box as="ul" display="flex">
         <StatsItem>
           <Label>Followers</Label>
           <Quantity>{followers}</Quantity>
@@ -42,7 +47,7 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
           <Label>Likes</Label>
           <Quantity>{likes}</Quantity>
         </StatsItem>
-      </ProfileStats>
+      </Box>
     </Box>
   );
 };
