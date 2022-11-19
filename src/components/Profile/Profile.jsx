@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Box } from 'components/Box/Box.styled';
+import { Box } from 'components/Common';
 import {
   Avatar,
   UserName,
@@ -19,6 +19,7 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
       width="profile"
       borderRadius="normal"
       boxShadow="greyShadow"
+      mr={4}
     >
       <Box
         display="flex"

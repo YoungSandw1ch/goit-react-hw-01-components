@@ -2,6 +2,8 @@ export const theme = {
   colors: {
     white: '#ffffff',
     black: '#000000',
+    fistFontColor: '#2a2a2a',
+    greyFontColor: '#969191',
     profileShadow: '#dbe1ea',
     secondColor: '#8b96a2',
     profileBg: '#f4f6f9',
@@ -20,6 +22,7 @@ export const theme = {
     xs: '12px',
     s: '14px',
     m: '16px',
+    xm: '20px',
     l: '32px',
     xl: '64px',
     custom: '26px',
@@ -52,6 +55,7 @@ export const theme = {
   sizes: {
     one: '100px',
     two: '200px',
+    three: '300px',
     profile: '350px',
     container: '1030px',
     avatar: '150px',
@@ -60,6 +64,44 @@ export const theme = {
   shadows: {
     greyShadow: `3px 3px 1px #dbe1ea,
     -3px 3px 1px #dbe1ea`,
+  },
+
+  text: {
+    caps: {
+      textTransform: 'uppercase',
+      letterSpacing: '0.2em',
+    },
+    heading: {
+      fontFamily: 'heading',
+      lineHeight: 'heading',
+      fontWeight: 'heading',
+    },
+  },
+  styles: {
+    pre: {
+      fontFamily: 'monospace',
+      overflowX: 'auto',
+      code: {
+        color: 'inherit',
+      },
+    },
+    code: {
+      fontFamily: 'monospace',
+      fontSize: 'inherit',
+    },
+    table: {
+      width: '100%',
+      borderCollapse: 'separate',
+      borderSpacing: 0,
+    },
+    th: {
+      textAlign: 'left',
+      borderBottomStyle: 'solid',
+    },
+    td: {
+      textAlign: 'left',
+      borderBottomStyle: 'solid',
+    },
   },
 };
 
