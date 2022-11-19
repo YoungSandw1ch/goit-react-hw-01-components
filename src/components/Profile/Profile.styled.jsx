@@ -1,25 +1,16 @@
-import styled from '@emotion/styled';
-
-export const ProfileWrapper = styled.div`
-  width: 350px;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: ${props => props.theme.colors.white};
-  box-shadow: 3px 3px 1px ${props => props.theme.colors.profileShadow},
-    -3px 3px 1px ${props => props.theme.colors.profileShadow};
-`;
+import styled from 'styled-components';
 
 export const DescriptionBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${props => props.theme.spacing(10, 5)};
+  padding: ${({ theme }) => theme.space[5]}px ${({ theme }) => theme.space[4]}px;
 `;
 
 export const Avatar = styled.img`
   display: block;
-  margin-bottom: ${props => props.theme.spacing(10)};
+  margin-bottom: ${({ theme }) => theme.space[5]}px;
   width: 160px;
   height: auto;
   border-radius: 50%;
@@ -28,18 +19,18 @@ export const Avatar = styled.img`
 export const UserName = styled.p`
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: ${props => props.theme.spacing(2)};
+  margin-bottom: ${({ theme }) => theme.space[3]}px;
 `;
 
 export const ProfileTag = styled.p`
-  margin-bottom: ${props => props.theme.spacing(2)};
+  margin-bottom: ${({ theme }) => theme.space[3]}px;
   font-size: 18px;
-  color: ${props => props.theme.colors.secondColor};
+  color: ${p => p.theme.colors.secondColor};
 `;
 
 export const Location = styled.p`
   font-size: 18px;
-  color: ${props => props.theme.colors.secondColor};
+  color: ${p => p.theme.colors.secondColor};
 `;
 
 export const ProfileStats = styled.ul`
@@ -55,18 +46,18 @@ export const StatsItem = styled.li`
   justify-content: center;
   align-items: center;
   height: 100px;
-  border-top: 2px solid ${props => props.theme.colors.profileBorder};
-  background-color: ${props => props.theme.colors.profileBg};
+  border-top: 2px solid ${p => p.theme.colors.profileBorder};
+  background-color: ${p => p.theme.colors.profileBg};
 
   :not(:last-child) {
-    border-right: 2px solid ${props => props.theme.colors.profileBorder};
+    border-right: 2px solid ${p => p.theme.colors.profileBorder};
   }
 `;
 
 export const Label = styled.span`
   font-size: 16px;
-  color: ${props => props.theme.colors.secondColor};
-  margin-bottom: ${props => props.theme.spacing(2)};
+  color: ${p => p.theme.colors.secondColor};
+  margin-bottom: ${({ theme }) => theme.space[3]}px;
 `;
 
 export const Quantity = styled.span`

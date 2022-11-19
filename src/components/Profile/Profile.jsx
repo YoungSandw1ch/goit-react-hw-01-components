@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
+import { Box } from 'components/Box/Box.styled';
 import {
-  ProfileWrapper,
   DescriptionBox,
   Avatar,
   UserName,
@@ -15,7 +15,13 @@ import {
 export const Profile = ({ userName, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
   return (
-    <ProfileWrapper>
+    <Box
+      bg="white"
+      overflow="hidden"
+      width="profile"
+      borderRadius="normal"
+      boxShadow="greyShadow"
+    >
       <DescriptionBox>
         <Avatar src={avatar} alt="User avatar" />
         <UserName>{userName}</UserName>
@@ -37,7 +43,7 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
           <Quantity>{likes}</Quantity>
         </StatsItem>
       </ProfileStats>
-    </ProfileWrapper>
+    </Box>
   );
 };
 
