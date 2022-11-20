@@ -16,7 +16,7 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
     <Box
       bg="white"
       overflow="hidden"
-      width="profile"
+      width="three"
       borderRadius="normal"
       boxShadow="greyShadow"
       mr={4}

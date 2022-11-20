@@ -2,6 +2,7 @@ export const theme = {
   colors: {
     white: '#ffffff',
     black: '#000000',
+    secondWhite: '#f6ffff',
     fistFontColor: '#2a2a2a',
     greyFontColor: '#969191',
     profileShadow: '#dbe1ea',
@@ -23,6 +24,7 @@ export const theme = {
     s: '14px',
     m: '16px',
     xm: '20px',
+    ms: '25px',
     l: '32px',
     xl: '64px',
     custom: '26px',
@@ -53,12 +55,15 @@ export const theme = {
   },
 
   sizes: {
+    half: '50px',
     one: '100px',
     two: '200px',
     three: '300px',
+    four: '400px',
     profile: '350px',
     container: '1030px',
     avatar: '150px',
+    statistic: '80px',
   },
 
   shadows: {

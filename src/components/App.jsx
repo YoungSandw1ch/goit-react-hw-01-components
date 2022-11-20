@@ -22,12 +22,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics
-        title="Upload stats"
-        id={data.id}
-        label={data.label}
-        percentage={data.percentage}
-      />
+      <Box display="grid" gridGap={4} mr={4}>
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+      </Box>
     </Box>
   );
 };

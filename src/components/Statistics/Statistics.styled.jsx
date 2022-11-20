@@ -1,24 +1,19 @@
 import styled from 'styled-components';
+import data from 'data/data.json';
 
-<section class="statistics">
-  <h2 class="title">Upload stats</h2>
+export const ListItem = styled.li`
+  flex-basis: calc(100% / ${data.length});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.space[3]}px;
+  color: ${({ theme }) => theme.colors.secondWhite};
+`;
 
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
-    </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
-    </li>
-  </ul>
-</section>;
+export const Label = styled.span`
+  font-size: ${({ theme }) => theme.fontSizes.m};
+`;
+export const Percentage = styled.span`
+  font-size: ${({ theme }) => theme.fontSizes.ms};
+`;
