@@ -19,7 +19,6 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
       width="three"
       borderRadius="normal"
       boxShadow="greyShadow"
-      mr={4}
     >
       <Box
         display="flex"
