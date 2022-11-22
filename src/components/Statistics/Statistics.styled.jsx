@@ -9,6 +9,11 @@ export const ListItem = styled.li`
   align-items: center;
   gap: ${({ theme }) => theme.space[3]}px;
   color: ${({ theme }) => theme.colors.secondWhite};
+  transition: flex-basis 300ms linear;
+
+  :hover {
+    flex-basis: 100%;
+  }
 `;
 
 export const Label = styled.span`

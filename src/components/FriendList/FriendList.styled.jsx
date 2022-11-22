@@ -15,6 +15,10 @@ export const Item = styled.li`
   :not(:last-child) {
     margin-bottom: ${({ theme }) => theme.space[3]}px;
   }
+
+  :hover {
+    transform: scale(1.03);
+  }
 `;
 
 export const Chip = styled.span`
