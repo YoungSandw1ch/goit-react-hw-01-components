@@ -12,6 +12,10 @@ export const theme = {
     profileBg: '#f4f6f9',
     profileBorder: '#e7ebf1',
     lightgrey: 'lightgrey',
+    tableBorder: '#E2E2E2',
+    tableRow: '#EDF1F3',
+    tableHead: '#55BAD2',
+    tableFont: '#888C8E',
   },
 
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
