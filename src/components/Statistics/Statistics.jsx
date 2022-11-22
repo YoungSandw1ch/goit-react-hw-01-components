@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import PropTypes from 'prop-types';
 import { Box } from 'components/Common';
 import { Heading } from 'components/Common';
