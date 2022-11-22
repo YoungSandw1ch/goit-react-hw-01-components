@@ -11,6 +11,7 @@ export const Item = styled.li`
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: ${({ theme }) => theme.radii.normal};
   box-shadow: ${({ theme }) => theme.shadows.friendsShadow};
+  transition: transform 300ms ease-in-out;
 
   :not(:last-child) {
     margin-bottom: ${({ theme }) => theme.space[3]}px;

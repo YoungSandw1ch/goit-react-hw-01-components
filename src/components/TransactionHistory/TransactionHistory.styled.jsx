@@ -8,6 +8,8 @@ export const Table = styled.table`
   background-color: ${({ theme }) => theme.colors.white};
 `;
 export const TableRow = styled.tr`
+  transition: background-color 250ms ease-in-out;
+
   :nth-child(even) {
     background-color: ${({ theme }) => theme.colors.tableRow};
   }
